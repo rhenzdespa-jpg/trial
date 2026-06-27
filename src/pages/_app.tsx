@@ -11,7 +11,7 @@ export default function App({ Component, pageProps }: AppProps) {
         <title>Tamakita 💕 Mahal kita, 20 lang pera ko</title>
         <meta name="description" content="Your cute couple app for budget dates!" />
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
       </Head>
       <AuthProvider>
         <Component {...pageProps} />
