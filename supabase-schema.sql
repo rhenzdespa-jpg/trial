@@ -111,7 +111,7 @@ INSERT INTO public.place_menu_items (place_id, item_name, item_price, category, 
   ('temp-place-2', 'Pork Silog', 75, 'Main', TRUE),
   ('temp-place-3', 'Lugaw (special)', 35, 'Main', TRUE),
   ('temp-place-3', 'Goto', 40, 'Main', TRUE),
-  ('temp-place-3', 'Tokwa't Baboy', 45, 'Snacks', TRUE),
+  ('temp-place-3', 'Tokwa''t Baboy', 45, 'Snacks', TRUE),
   ('temp-place-4', 'Fishballs (10 pcs)', 15, 'Snacks', TRUE),
   ('temp-place-4', 'Banana Cue', 20, 'Snacks', TRUE),
   ('temp-place-4', 'Kikiam (5 pcs)', 25, 'Snacks', TRUE)
