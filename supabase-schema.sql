@@ -89,6 +89,35 @@ CREATE TABLE IF NOT EXISTS public.saved_places (
 );
 
 -- ================================================
+-- EXPERIMENTAL PLACE MENU ITEMS TABLE (cheap eats)
+-- ================================================
+CREATE TABLE IF NOT EXISTS public.place_menu_items (
+  id UUID DEFAULT uuid_generate_v4() PRIMARY KEY,
+  place_id TEXT NOT NULL,
+  item_name TEXT NOT NULL,
+  item_price DECIMAL NOT NULL,
+  category TEXT, -- e.g., "Merienda", "Main", "Snacks"
+  is_experimental BOOLEAN DEFAULT TRUE,
+  created_at TIMESTAMPTZ DEFAULT NOW()
+);
+
+-- Insert experimental price data for common cheap food spots!
+INSERT INTO public.place_menu_items (place_id, item_name, item_price, category, is_experimental) VALUES
+  ('temp-place-1', 'Isaw (3 sticks)', 20, 'Snacks', TRUE),
+  ('temp-place-1', 'Kwek-kwek (2 pcs)', 25, 'Snacks', TRUE),
+  ('temp-place-1', 'Sisig Rice', 85, 'Main', TRUE),
+  ('temp-place-2', 'Champorado', 30, 'Merienda', TRUE),
+  ('temp-place-2', 'Taho', 20, 'Merienda', TRUE),
+  ('temp-place-2', 'Pork Silog', 75, 'Main', TRUE),
+  ('temp-place-3', 'Lugaw (special)', 35, 'Main', TRUE),
+  ('temp-place-3', 'Goto', 40, 'Main', TRUE),
+  ('temp-place-3', 'Tokwa't Baboy', 45, 'Snacks', TRUE),
+  ('temp-place-4', 'Fishballs (10 pcs)', 15, 'Snacks', TRUE),
+  ('temp-place-4', 'Banana Cue', 20, 'Snacks', TRUE),
+  ('temp-place-4', 'Kikiam (5 pcs)', 25, 'Snacks', TRUE)
+ON CONFLICT DO NOTHING;
+
+-- ================================================
 -- TAMAGOTCHI STATE TABLE
 -- ================================================
 CREATE TABLE IF NOT EXISTS public.tamagotchi_state (
