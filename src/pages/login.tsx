@@ -49,8 +49,7 @@ export default function LoginPage() {
         <h1 className="font-display text-5xl text-bubblegum mb-2 drop-shadow-sm">
           LoveRadOt! 💕
         </h1>
-        <p className="text-pink-400 font-bold text-lg mb-1">
-          Mahal kita, pero 20 lang pera ko
+ 
         </p>
         <p className="text-gray-400 text-sm font-medium mb-10">
           Your cute couple app for budget dates 🍜
