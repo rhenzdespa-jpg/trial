@@ -59,10 +59,10 @@ export default function LoginPage() {
         {/* Features preview */}
         <div className="flex gap-3 justify-center mb-8 flex-wrap">
           {[
-            { icon: '📓', label: 'Couple Journal' },
-            { icon: '📍', label: 'Cheap Food Spots' },
-            { icon: '🗓️', label: 'Date Planner' },
-            { icon: '🐾', label: 'Pet Tamagotchi' },
+            { icon: '', label: 'Couple Journal' },
+            { icon: '', label: 'Cheap Food Spots' },
+            { icon: '', label: 'Date Planner' },
+            { icon: '', label: 'Pet Tamagotchi' },
           ].map((f) => (
             <div key={f.label} className="bg-white/70 backdrop-blur-sm rounded-2xl px-3 py-2 flex items-center gap-1.5 shadow-sm border border-pink-100">
               <span className="text-lg">{f.icon}</span>
@@ -83,7 +83,7 @@ export default function LoginPage() {
         </motion.button>
 
         <p className="text-gray-400 text-xs mt-4 font-medium">
-          Free forever 💸 No hidden fees!
+          Free forever No hidden fees!
         </p>
       </motion.div>
     </div>
