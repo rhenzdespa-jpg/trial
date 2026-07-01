@@ -10,7 +10,7 @@ export default function Document() {
         <meta name="theme-color" content="#FF6B9D" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="default" />
-        <meta name="apple-mobile-web-app-title" content="Tamakita" />
+        <meta name="apple-mobile-web-app-title" content="LoveRadOt" />
       </Head>
       <body>
         <Main />
